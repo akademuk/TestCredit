@@ -800,6 +800,62 @@ h2 span {
 .imgFlex img {
     object-fit: contain;
 }
+.speedTop {
+    flex-direction: column;
+}
+.speed {
+    margin-bottom: 63px;
+}
+.speedContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.speedContentInfo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.speedContentInfo img {
+    margin-right: 29px;
+    object-fit: contain;
+}
+.textSpeed p {
+    font-family: 'PresicavRegular';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
+    margin-bottom: 35px;
+}
+.textSpeed button{
+    font-family: 'Manrope', sans-serif;
+    background: #3DAE2B;
+    border-radius: 30px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    padding: 3px 15px;
+}
+.backgroundContainer {
+    background:#8267F6;
+    backdrop-filter: blur(100px);
+    border-radius: 12px;
+    padding: 23px 19px 24px 19px;
+}
+.backgroundContainer .textSpeed p {
+    color: #fff;
+}
+.backgroundContainer .textSpeed button {
+    background: #FFFFFF;
+    border-radius: 30px;
+    color: #8267F6;
+}
 @media (max-width: 1300px) {
 .headerContent {
     padding: 50px 50px;
@@ -818,6 +874,13 @@ h2 span {
 .steps {
     max-width: 1300px;
     margin: 80px auto 0 auto;
+}
+.speed {
+    max-width: 1300px;
+    margin: 0 auto 63px auto;
+}
+.stepsTop {
+    width: 100%;
 }
 }
 @media (min-width: 1550px) {
@@ -991,6 +1054,28 @@ h2 {
 }
 .stepsContent {
     padding-left: 30px;
+}
+.speedContent {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.textSpeed p {
+    margin-bottom: 15px;
+}
+.speedContentInfo {
+    width: 50%;
+    justify-content: space-between;
+}
+.textSpeed {
+    text-align: right;
+}
+.imgFlex {
+    position: relative;
+}
+.imgFlex img {
+    position: absolute;
+    right: 0;
+    top: 100%;
 }
 }
 @media (max-width: 576px) {
@@ -1177,5 +1262,44 @@ h2 {
 }
 .stepsContentInfo:nth-of-type(1) .number::before {
     right: -175%;
+}
+.speedContentInfo {
+    width: 100%;
+}
+.speedTop .imgFlex img {
+    position: relative;
+    margin-top: -50px;
+}
+.stepsTop img {
+    position: static;
+}
+.imgFlex h2 {
+    margin-bottom: 0;
+}
+.speedContentInfo {
+    justify-content: flex-start;
+}
+.speedContentInfo img{
+    object-fit: contain !important;
+    max-width: fit-content;
+    width: 100px;
+}
+.textSpeed {
+    text-align: left;
+}
+.speedContentInfo:nth-of-type(1) img {
+    margin-right: 55px;
+}
+.speedContentInfo:nth-of-type(2) img {
+    margin-right: 47px;
+}
+.speedContentInfo:nth-of-type(4) img {
+    margin-right: 30px;
+}
+.imgFlex {
+    margin-bottom: 45px;
+}
+.speedContentInfo {
+    padding: 11px 11px 30px 11px;
 }
 }
