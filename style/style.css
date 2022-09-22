@@ -1063,7 +1063,7 @@ h2 {
     margin-bottom: 15px;
 }
 .speedContentInfo {
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
 }
 .textSpeed {
@@ -1301,5 +1301,13 @@ h2 {
 }
 .speedContentInfo {
     padding: 11px 11px 30px 11px;
+}
+.speedImg {
+    position: absolute !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+.imgFlex h2 {
+    width: 80%;
 }
 }
