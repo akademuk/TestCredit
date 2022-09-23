@@ -43,6 +43,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'PresicavRegular', sans-serif; 
     color:var(--backgroundBlack);
@@ -196,9 +199,9 @@ body {
   z-index: 9;
   background: #F5F5F5;
   padding: 22px 44px 72px 44px;
-  -webkit-animation: burger-open 1s linear;
+  -webkit-animation: burger-open 0.3s linear;
   -webkit-animation-fill-mode: forwards;
-  animation: burger-open 1s linear;
+  animation: burger-open 0.3s linear;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes burger-open {
@@ -1098,6 +1101,11 @@ h2 span {
     padding: 50px 50px;
 }
 }
+@media(max-width: 1400px) {
+.headerContent {
+    padding-left: 50px;
+}
+}
 @media (min-width: 1350px) {
 .rangeSlider {
     max-width: 1200px;
@@ -1768,6 +1776,7 @@ h2 {
 .questionbtn {
     font-size: 16px;
     padding:  8px 15px;
+    margin-left: 0;
 }
 }
 @media (max-width: 350px) {
