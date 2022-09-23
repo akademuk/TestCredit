@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'PresicavRegular';
     src: url('../fonts/PresicavLt-Regular.eot');
     src: local('PresicavLt-Regular'),
@@ -8,8 +8,8 @@
         url('../fonts/PresicavLt-Regular.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
     font-family: 'PresicavBold';
     src: url('../fonts/Presicav-Bold.eot');
     src: local('Presicav-Bold'),
@@ -18,6 +18,18 @@
         url('../fonts/Presicav-Bold.woff') format('woff'),
         url('../fonts/Presicav-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+} */
+@font-face {
+    font-family: "PresicavBold";
+    src: url("../fonts/Presicav-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PresicavRegular";
+    src: url("../fonts/Presicav-Regular.ttf") format("truetype");
+    font-weight: 300;
     font-style: normal;
 }
 /*font-family: 'Manrope', sans-serif;*/
@@ -61,7 +73,7 @@ body {
     margin-right: 8px;
 }
 .headerNavigation {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,7 +81,7 @@ body {
     margin-bottom: 36px;
     display: flex;
     align-items: flex-start;
-    width: 150px;
+    width: 220px;
 }
 .headerNavigation li:nth-of-type(3){
     margin-bottom: 0;
@@ -110,7 +122,6 @@ body {
     height: 40px;
     width: 170px;
     font-family: 'PresicavBold';
-    font-weight: bold;
     line-height: 19px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -130,7 +141,6 @@ body {
     height: 40px;
     width: 170px;
     font-family: 'PresicavBold';
-    font-weight: bold;
     line-height: 19px;
     text-transform: uppercase;
     color: #CBCBCB;
@@ -467,7 +477,7 @@ body {
 .positionImg {
     position: absolute;
     bottom: -10%;
-    left: 34%;
+    left: 33%;
     right: auto;
     z-index: 2;
     transform: translate(-32%, 0);
@@ -500,7 +510,7 @@ h1 {
     font-size: 90px;
     line-height: 85px;
     color: #303030;
-    padding-left: 130px;
+    padding-left: 0;
     margin-top: 43px;
 }
 h1 span {
@@ -693,11 +703,11 @@ input[type="range"]::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 130px;
+    padding-left:0;
     width: 90%;
 }
 h2 {
-    font-family: 'PresicavBold';
+    font-family: 'PresicavRegular';
     font-weight: 300;
     font-size: 90px;
     line-height: 85px;
@@ -705,6 +715,7 @@ h2 {
     margin-bottom: 38px;
 }
 h2 span {
+    font-family: 'PresicavBold';
     display: block;
     color:#3DAE2B;
     font-weight: bold;
@@ -722,7 +733,7 @@ h2 span {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 130px;
+    padding-left: 0;
     width: 90%;
 }
 .stepsContentInfo {
@@ -856,6 +867,227 @@ h2 span {
     border-radius: 30px;
     color: #8267F6;
 }
+.question {
+    display: flex;
+    flex-direction: column;
+}
+.questionTop {
+    display: flex;
+    position: relative;
+    width: max-content;
+}
+.questionImg {
+    object-fit: contain;
+    position: absolute;
+    right: -25%;
+    top: -15%;
+}
+.questionTopText p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #303030;
+    margin-bottom: 55px;
+}
+.accordions-wrapper {
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.accordion {
+    border-top:0.5px solid #303030;
+}
+.accordion-header {
+    width: 100%;
+    padding: 32px 20px 40px 0;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion-header h4 {
+    font-family: 'PresicavRegular';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #303030;
+    cursor: pointer;
+}
+.accordion-body {
+    transition: all 0.35s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}  
+.accordion-body p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
+    padding-bottom: 39px;
+} 
+.accordion-icon {
+    transition: transform 0.4s ease-in-out;
+}  
+.accordion.active .accordion-header h4{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    padding-bottom: 12px;
+}
+.accordion.active .accordion-header {
+    padding-bottom: 12px;
+}
+.accordion.active .accordion-icon {
+    transform: rotate(-180deg);
+}
+.accordion:nth-last-child(1) {
+    border-bottom:0.5px solid #303030;
+}
+.questionBottom {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    position: relative;
+    padding-bottom: 90px;
+}
+.questionBottom p {
+    margin-left: 30px;
+    font-family: 'PresicavBold';
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #3DAE2B;
+    width: 25%;
+}
+.questionBottomMessage {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+}
+.questionBottom .calcResultBtn {
+    margin-left: 200px;
+    height: max-content;
+}
+.footer {
+    background: #303030;
+    padding: 80px 0 30px 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footerLogo {
+    display: flex;
+}
+.footerTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #444444;
+}
+.footerTopCenter {
+    width: 30%;
+}
+.footerLink {
+    margin-top: 65px;
+}
+.footerLink p{
+    font-family: 'PresicavBold';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    margin-bottom: 25px;
+}
+.footerLinkIcon a {
+    margin-right: 37px;
+}
+.footerLinkIcon a:nth-last-child(1) {
+    margin-right: 0;
+}
+.footerNavigation {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 29px;
+}
+.footerNavigation li{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.footerTopCenter p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #F2F2F2;
+}
+.footerTopCenter p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+.footerNavigation li a {
+    font-family: 'PresicavRegular';
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+.footerTopRight p:nth-of-type(1){
+    font-family: 'PresicavBold';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+.footerTopRight p:nth-of-type(2){
+    font-family: 'PresicavBold';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DAE2B;
+    margin-bottom: 25px;
+    display: flex;
+}
+.footerTopRight p:nth-of-type(2)::before {
+    content: "";
+    display: flex;
+    background: url(../img/telIcon.png);
+    min-width: 18px;
+    min-height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 14px;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footerContainer a:nth-of-type(1){
+    margin-bottom: 25px;
+}
+.footerBottom {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    color: #F2F2F2;
+    padding-top: 25px;
+}
 @media (max-width: 1300px) {
 .headerContent {
     padding: 50px 50px;
@@ -863,20 +1095,24 @@ h2 span {
 }
 @media (min-width: 1350px) {
 .rangeSlider {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 32px auto 0 auto;
     padding: 0;
 }
+.question {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .positionImg {
-    left: 42%;
+    left: 36%;
     object-fit: contain;
 }
 .steps {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 80px auto 0 auto;
 }
 .speed {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto 63px auto;
 }
 .stepsTop {
@@ -901,6 +1137,19 @@ h2 span {
   .stepsContent {
     padding-left: 50px;
 }
+.questionTop {
+    padding: 0 50px;
+}
+h1 {
+    font-size: 75px;
+}
+h2 {
+    font-size: 75px;
+}
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
 }
 @media (max-width: 1200px) {
 .header {
@@ -908,7 +1157,7 @@ h2 span {
 }
 .headerNavigation {
     position: absolute;
-    width: 40%;
+    width: 100%;
     bottom: 30px;
     right: 50px;
     justify-content: flex-end;
@@ -938,14 +1187,50 @@ h1 {
 .stepsContentInfo:nth-of-type(3) .number {
     margin-right: 10px;
 }
+.questionImg  {
+    right: -7%;
+}
+.questionBottomMessage {
+    bottom: 15%;
+}
+.questionTopText {
+    max-width: 100%;
+    width: auto;
+}
+.questionBottom {
+    max-width: 90%;
+    width: 100vw;
+    padding-left: 0;
+    margin: 0 auto;
+}
+.questionBottom p {
+    width: 50%;
+}
+.questionBottom .calcResultBtn {
+    margin-left: 20px;
+    width: max-content;
+}
+.questionImg  {
+    right: -10%;
+    z-index: -1;
+}
 }
 @media (max-width: 992px) {
-.headerNavigation {
-    width: 60%;
-}
 .rangeSlider {
     padding: 0 50px;
     flex-direction: column;
+}
+.questionImg  {
+    right: 5%;
+}
+.questionTopText p {
+    width: 80%;
+}
+.questionTopText {
+    padding-left: 50px;
+}
+.questionTop {
+    padding: 0;
 }
 .rangeSliderLeft {
     width: 100%;
@@ -955,10 +1240,33 @@ h1 {
     width: 100%;
 }
 h1 {
-    font-size: 90px;
+    font-size:60px;
+    line-height: 100%;
     padding-left: 0;
     display: inline;
 }
+h2 {
+    font-size:60px;
+    line-height: 100%;
+}
+.questionTopText {
+    width: 90%;
+}
+.questionTop {
+    width: auto;
+}
+.questionBottom {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 50px;
+}
+.accordions-wrapper {
+    max-width: 90%;
+}
+.accordion-header h4{
+    padding-right: 50px;
+}
+
 .positionImg {
     top: 0;
     right: 0;
@@ -977,11 +1285,16 @@ h1 {
 .numberText {
     font-size: 16px;
 }
+.positionImg img {
+    max-width: 100%;
+    max-height: 100%;
+}
 }
 @media (max-width: 768px) {
 .headerNavigation {
     display: none;
 }
+
 .numberText {
     font-size: 14px;
 }
@@ -993,6 +1306,12 @@ h1 {
 }
 .logotype svg{
     display: none;
+}
+.burgerBtn {
+    width: max-content;
+}
+.burgerHelpText {
+    width: 50%;
 }
 .mobileBtn {
     display: block;
@@ -1077,6 +1396,81 @@ h2 {
     right: 0;
     top: 100%;
 }
+.positionImg {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    right: -18%;
+    top: 10%;
+}
+.positionImg img {
+    max-width: 60%;
+    max-height: 60%;
+}
+.positionImg::after {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    left: 33%;
+}
+.questionBottom {
+    position: relative;
+}
+.questionBottom p {
+    width: auto;
+}
+.questionBottomMessage {
+    bottom: 20px;
+}
+.calcResultBtn {
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+}
+.footerTopLeft {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.footerLink {
+    position: absolute;
+    top: 1000%;
+    margin-top: 0;
+}
+.footerTop {
+    flex-direction: column;
+}
+.footerTopCenter {
+    width: 100%;
+}
+.footerTopRight {
+    position: relative;
+    width: 100%;
+}
+.mobilePosition {
+    position: absolute;
+    top: -575%;
+}
+.mobilePosition p br{
+    display: none;
+}
+.footerTopCenter p:nth-of-type(1) {
+    padding-top: 100px;
+}
+.footerTopCenter {
+    padding-bottom: 200px;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footerContainer a:nth-of-type(1) {
+    margin-right: auto
+}
+.question {
+    padding-bottom: 50px;
+}
 }
 @media (max-width: 576px) {
 .headerContent {
@@ -1085,6 +1479,42 @@ h2 {
 .box-container {
     right: -10px;
     top: 38px;
+}
+.questionBottom .calcResultBtn {
+    bottom: -40px;
+    left: 50%; 
+    transform: translate(-50%, 0);
+    font-size: 18px;
+    width: 70%;
+}
+.questionTopText p {
+    font-size: 14px;
+}
+.accordion.active .accordion-header h4 {
+    font-size: 16px;
+}
+.accordion-header h4 {
+    font-size: 16px;
+}
+.questionBottom {
+    flex-direction: column;
+}
+.questionBottom p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.questionBottom img{
+    margin-right: auto;
+}
+.accordion-body p {
+    font-size: 14px;
+}
+.questionTopText {
+    padding-left: 30px;
+}
+.questionBottomMessage {
+    bottom: auto;
+    top: 35px;
 }
 .mobileBtn {
     width: 125px;
@@ -1137,6 +1567,9 @@ h1 {
 }
 .rangeSliderLeft {
     height: 175px;
+}
+.positionImg {
+    top: 0;
 }
 .positionImg::after {
     width: 50px;
