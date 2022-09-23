@@ -55,6 +55,14 @@ body {
     background: #F5F5F5;
     overflow: visible;
 }
+.logotype a{
+    display: flex;
+    text-decoration: none;
+}
+.footerLogo a {
+    display: flex;
+    text-decoration: none;
+}
 .bodyActive {
     overflow: hidden;
 }
@@ -1096,6 +1104,92 @@ h2 span {
     color: #F2F2F2;
     padding-top: 25px;
 }
+.cardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    margin-top: 75px;
+}
+.cardContainerBlock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    width: 23%;
+    height: 385px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px 16px 43px 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.card img{
+    max-width: 100%;
+    min-height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding: 0 19px;
+}
+.cardProcent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 17px;
+    color: #8267F6;
+    margin: 15px 0 25px 0;
+    padding: 0 19px;
+    min-height: 60px;
+}
+.cardText {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 19px;
+}
+.cardTextLeft {
+    width: 50%;
+    text-align: left;
+}
+.cardTextLeft p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 20px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+.cardTextRight {
+    width: 50%;
+    text-align: right;
+}
+.cardTextRight p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+.cardBtn {
+    width: 100%;
+    font-family: 'PresicavBold';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 0;
+    background: #3DAE2B;
+    border-radius: 30px;
+    border: none;
+}
 @media (max-width: 1300px) {
 .headerContent {
     padding: 50px 50px;
@@ -1134,7 +1228,11 @@ h2 span {
 }
 @media (min-width: 1550px) {
     .headerNavigation  {
-        width: 50%;
+        width: 58%;
+    }
+    .headerContent {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 @media (max-width: 1350px) {
@@ -1162,6 +1260,17 @@ h2 {
 .wrapper {
     max-width: 90%;
     margin: 0 auto;
+}
+.cardContainer {
+    max-width: 90%;
+}
+.card {
+    width: 270px;
+    min-height: 385px;
+    height: 100%;
+}
+.cardBtn  {
+    font-size: 14px;
 }
 }
 @media (max-width: 1200px) {
@@ -1484,14 +1593,24 @@ h2 {
 .question {
     padding-bottom: 50px;
 }
+
 }
 @media (max-width: 576px) {
 .headerContent {
     padding: 20px;
 }
+.cardContainerBlock {
+    justify-content: center;
+}
 .box-container {
     right: -10px;
     top: 38px;
+}
+.cardTextLeft {
+    font-size: 12px;
+}
+.cardTextRight {
+    font-size: 12px;
 }
 .questionbtn {
     bottom: -40px;

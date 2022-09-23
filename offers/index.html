@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Test Credit</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="headerContent">
             <div class="logotype">
-                <img src="img/logo.png" alt="Test Credit">
+              <a href="../index.html">
+                <img src="../img/logo.png" alt="Test Credit">
                 <svg width="100" height="41" viewBox="0 0 100 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.2749 0.466245V3.66637H9.38839V14.7715H5.88654V3.66637H0V0.466245H15.2749Z" fill="#303030"/>
                     <path d="M32.6163 0.466245V3.41206H20.8647V5.93401H31.1769V8.92221H20.8647V11.5077H32.9171V14.7715H17.3414V0.466245H32.6163Z" fill="#303030"/>
@@ -26,19 +27,20 @@
                     <path d="M82.3003 25.8977V40.2029H78.7769V25.8977H82.3003Z" fill="#303030"/>
                     <path d="M99.93 25.8977V29.0979H94.0435V40.2029H90.5416V29.0979H84.6551V25.8977H99.93Z" fill="#303030"/>
                 </svg>    
+              </a>
             </div>
             <ul class="headerNavigation">
                 <li>
                     <a href="#">Про нас</a>
                 </li>
                 <li>
-                    <a href="#speed">Як отримати?</a>
+                    <a href="../index.html#speed">Як отримати?</a>
                 </li>
                 <li>
-                    <a href="offers/index.html">Офери</a>
+                    <a href="#" style="color:#303030; font-weight: 700;">Офери</a>
                 </li>
                 <li>
-                    <a href="#question">Питання-відповідь</a>
+                    <a href="../index.html#question">Питання-відповідь</a>
                 </li>
             </ul>
             <button class="mobileBtn">отримати грошi</button>
@@ -90,13 +92,13 @@
                     <a href="#">Про нас</a>
                 </li>
                 <li>
-                    <a href="#speed" class="link">Як отримати?</a>
+                    <a href="../index.html#speed" class="link">Як отримати?</a>
                 </li>
                 <li>
-                    <a href="offers/index.html">Офери</a>
+                    <a href="#">Офери</a>
                 </li>
                 <li>
-                    <a href="#question" class="link">Питання-відповідь</a>
+                    <a href="../index.html#question" class="link">Питання-відповідь</a>
                 </li>
             </ul>
             <p class="burgerHelpText">ЦІЛОДОБОВА СЛУЖБА ТУРБОТИ:</p>
@@ -118,207 +120,186 @@
             <button class="burgerBtn">СПЛАТИТИ</button>
         </div>
     </div>
-    <div class="rangeSlider">
-        <div class="rangeSliderLeft">
-            <h1>7 позик <span>під 0,01%</span> в день</h1>
-        </div>
-        <div class="positionImg">
-            <img src="img/dog.png" alt="">
-        </div>
-        <div class="rangeSliderRight">
-            <h3>Знижка 99,9% 🎉 <br> на 1-й кредит</h3>
-            <div class="rangeSliderRightContainer">
-               <div class="sliderMoney">
-                    <div class="sliderContainerText">
-                        <p>Виберiть сумму до 18 000 грн</p>
-                        <div id="slider-money">0</div>
+    <main class="main">
+        <div class="cardContainer">
+            <h2>Oфери</h2>
+            <div class="cardContainerBlock">
+                <div class="card">
+                    <img src="../img/zaimer.png" alt="zaimer">
+                    <p class="cardProcent">0,01% <br> на первый микрокредит</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 153 000 ₸.</p>
+                            <p>До 153 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
                     </div>
-                    <input type="range" id="my-slider" min="0" max="18000" value="0" oninput="slider()">
-               </div>
-               <div class="sliderDate">
-                <div class="sliderContainerText">
-                    <p>Виберить термiн</p>
-                    <div id="slider-date">0</div>
+                    <button class="cardBtn">отримати позику</button>
                 </div>
-                    <input type="range" id="my-slider2" min="0" max="31" value="0" oninput="sliderDate()">
-                </div>
-            </div>
-            <form action="" class="rangeForm">
-                <input type="text" placeholder="Iм’я / Призвище">
-                <input type="tel" name="" id="" placeholder="+999-999-999-999">
-                <input type="email" name="" id="" placeholder="Email" class="email">
-            </form>
-            <div class="calcResult">
-                <div class="calcResultProcent">
-                    <p>Вiдсотки</p>
-                    <p>10 грн.</p>
-                </div>
-                <div class="calcResultProcent">
-                    <p>Оплата у кiнцi термину</p>
-                    <p>15.09.2022</p>
-                </div>
-                <button class="calcResultBtn">отримати грошi</button>
-            </div>
-            <a href="#" class="linkCredit">Умови кредитування</a>
-        </div>
-    </div>
-    <div class="steps">
-        <div class="stepsTop">
-            <div class="stepsTopText">
-                <h2>Ви лише <span>в 3 кроках</span></h2>
-                <p>Отримати позику до 15 000 гривень так само легко, як порахувати до трьох:</p>
-            </div>
-            <img src="img/shape.png" alt="">
-        </div>
-        <div class="stepsContent">
-            <div class="stepsContentInfo">
-                <p class="number">1</p>
-                <p class="numberText">Заповніть онлайн-форму на сайті</p>
-            </div>
-            <div class="stepsContentInfo">
-                <p class="number">2</p>
-                <p class="numberText">Отримайте найкращі пропозиції на ринку</p>
-            </div>
-            <div class="stepsContentInfo">
-                <p class="number">3</p>
-                <p class="numberText">Заберіть свої гроші</p>
-            </div>
-        </div>
-    </div>
-    <div class="speed" id="speed">
-        <div class="stepsTop speedTop">
-            <div class="stepsTopText imgFlex">
-                <h2><span>Легко та швидко</span>оформити кредит за 5 хвилин</h2>
-                <img src="img/pose01_male.png" class="speedImg">
-            </div>
-            <div class="speedContent">
-                <div class="speedContentInfo">
-                    <img src="img/group2.png" alt="">
-                    <div class="textSpeed">
-                        <p>Виберіть <br> суму та термін</p>
-                        <button>30 секунд</button>
-                    </div>
-                </div>
-                <div class="speedContentInfo">
-                    <img src="img/file.png" alt="">
-                    <div class="textSpeed">
-                        <p>Заповніть <br> заявку</p>
-                        <button>2 хвилини</button>
-                    </div>
-                </div>
-                <div class="speedContentInfo">
-                    <img src="img/card.png" alt="">
-                    <div class="textSpeed">
-                        <p>Прив'яжіть <br> картку</p>
-                        <button>2 хвилини</button>
-                    </div>
-                </div>
-                <div class="speedContentInfo backgroundContainer">
-                    <img src="img/cardIcon.png" alt="">
-                    <div class="textSpeed">
-                        <p>Отримайте <br> грошi на картку</p>
-                        <button>30 секунд</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="question" id="question">
-        <div class="questionTop">
-            <div class="questionTopText">
-                <h2>Ваші питання — <span>наші відповіді</span></h2>
-                <p>Нижче ми підібрали відповіді на питання, які користувачі нашого сервісу задають найчастіше.</p>
-            </div>
-            <img src="img/shape1.png" alt="" class="questionImg">
-        </div>
-        <div class="accordions-wrapper">
-            <div class="accordion">
-              <div class="accordion-header">
-                <h4>Скільки часу потрібно, щоб взяти кредит онлайн?</h4>
-                <svg class="accordion-icon" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L11.5 11L22 1" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-    
-              <div class="accordion-body">
-                <p>
-                    В середньому, 10-20 хвилин.
-                </p>
-              </div>
-            </div>
-    
-            <div class="accordion">
-              <div class="accordion-header">
-                <h4>Які обов'язкові вимоги до позичальників?</h4>
-                <svg class="accordion-icon" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L11.5 11L22 1" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-    
-              <div class="accordion-body">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium ad rem pariatur aliquam commodi eos illo quas maxime error? Id ducimus quisquam impedit sapiente unde eum eligendi natus aliquid?
-                </p>
-              </div>
-            </div>
-    
-            <div class="accordion">
-              <div class="accordion-header">
-                <h4>Чи можна оформити позику на карту в ночі або у вихідні?</h4>
-                <svg class="accordion-icon" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L11.5 11L22 1" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-    
-              <div class="accordion-body">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum explicabo dolore porro odit quod, voluptas animi deserunt corrupti numquam, maiores nisi id iste placeat eligendi impedit, voluptatum quibusdam ut.
-                </p>
-              </div>
-            </div>
 
-            <div class="accordion">
-                <div class="accordion-header">
-                  <h4>На що слід звертати увагу при погашенні кредиту?</h4>
-                  <svg class="accordion-icon" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L11.5 11L22 1" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <div class="card">
+                    <img src="../img/man.png" alt="man">
+                    <p class="cardProcent">Первый микрокредит <br> без переплат</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
                 </div>
-      
-                <div class="accordion-body">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi corrupti, minus necessitatibus illum, quae quos earum commodi distinctio ducimus iste saepe! Aut fuga vitae, deserunt reprehenderit ex at natus.
-                  </p>
+
+                <div class="card">
+                    <img src="../img/creditPlus.png" alt="creditPlus">
+                    <p class="cardProcent">0,01% <br> на первый микрокредит</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
                 </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">
-                  <h4>Як дізнатися, чи ухвалили мою заявку?</h4>
-                  <svg class="accordion-icon" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L11.5 11L22 1" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+
+                <div class="card">
+                    <img src="../img/credit365.png" alt="credit365">
+                    <p class="cardProcent">0,01% <br> на первый микрокредит</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
                 </div>
-      
-                <div class="accordion-body">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi corrupti, minus necessitatibus illum, quae quos earum commodi distinctio ducimus iste saepe! Aut fuga vitae, deserunt reprehenderit ex at natus.
-                  </p>
+
+                <div class="card">
+                    <img src="../img/turboMoney.png" alt="turboMoney">
+                    <p class="cardProcent">Первый кредит <br> без переплат</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 100 000 ₸.</p>
+                            <p>До 100 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
+                </div>
+
+                <div class="card">
+                    <img src="../img/keke.png" alt="keke">
+                    <p class="cardProcent">Отсутствие залога, <br> поручителей, <br> справки о доходах
+                        
+                        </p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
+                </div>
+
+                <div class="card">
+                    <img src="../img/tengo.png" alt="tengo">
+                    <p class="cardProcent">Быстрые, удобные <br> и выгодные займы</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
+                </div>
+                
+                <div class="card">
+                    <img src="../img/hava.png" alt="tengo">
+                    <p class="cardProcent">0,01% <br> на первый микрокредит</p>
+                    <div class="cardText">
+                        <div class="cardTextLeft">
+                            <p>Первый кредит:</p>
+                            <p>Мах сумма:</p>
+                            <p>Процент:</p>
+                            <p>Возраст:</p>
+                        </div>
+                        <div class="cardTextRight">
+                            <p>До 150 000 ₸.</p>
+                            <p>До 150 000 ₸.</p>
+                            <p>от 0.01%</p>
+                            <p>от 18 лет</p>
+                        </div>
+                    </div>
+                    <button class="cardBtn">отримати позику</button>
                 </div>
             </div>
         </div>
-        <div class="questionBottom">
-            <img src="img/thumbUup.png" alt="">
-            <p>Готові знайти найкращу позику прямо зараз?</p>
-            <button class="calcResultBtn questionbtn">отримати грошi</button>
-            <img src="img/support-chat.png" alt="" class="questionBottomMessage">
+        <div class="infoContainer">
+     
+
+            
         </div>
-    </div>
+    </main>
     <footer class="footer">
         <div class="wrapper">
             <div class="footerTop">
                 <div class="footerTopLeft">
                     <div class="footerLogo">
-                        <img src="img/logo.png" alt="Test Credit">
+                        <a href="../index.html">
+                        <img src="../img/logo.png" alt="Test Credit">
                         <svg width="100" height="41" viewBox="0 0 100 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.2749 0.466245V3.66637H9.38839V14.7715H5.88654V3.66637H0V0.466245H15.2749Z" fill="#ffffff"/>
                             <path d="M32.6163 0.466245V3.41206H20.8647V5.93401H31.1769V8.92221H20.8647V11.5077H32.9171V14.7715H17.3414V0.466245H32.6163Z" fill="#ffffff"/>
@@ -330,22 +311,23 @@
                             <path d="M57.7283 25.8977H65.935C66.9806 25.8977 67.9402 25.9613 68.8139 26.0885C69.7019 26.2156 70.5612 26.4417 71.3919 26.7666C72.2369 27.0775 72.9459 27.4872 73.5188 27.9958C74.106 28.4903 74.5715 29.1402 74.9152 29.9456C75.2733 30.7368 75.4523 31.6481 75.4523 32.6795C75.4523 33.6685 75.2948 34.5939 74.9797 35.4557C74.6646 36.3035 74.1705 37.0947 73.4973 37.8293C72.8242 38.564 71.8789 39.1433 70.6615 39.5672C69.4584 39.991 68.0476 40.2029 66.4292 40.2029H57.7283V25.8977ZM65.935 28.78H61.2516V36.8969H65.978C67.9115 36.8969 69.3653 36.5507 70.3392 35.8584C71.3131 35.1661 71.8001 34.17 71.8001 32.8702C71.8001 31.5704 71.306 30.5672 70.3177 29.8608C69.3295 29.1402 67.8686 28.78 65.935 28.78Z" fill="#ffffff"/>
                             <path d="M82.3003 25.8977V40.2029H78.7769V25.8977H82.3003Z" fill="#ffffff"/>
                             <path d="M99.93 25.8977V29.0979H94.0435V40.2029H90.5416V29.0979H84.6551V25.8977H99.93Z" fill="#ffffff"/>
-                        </svg>    
+                        </svg>  
+                        </a>  
                     </div>
                     <div class="footerLink">
                         <p>Слідкуй за новинами:</p>
                         <div class="footerLinkIcon">
                             <a href="#">
-                                <img src="img/telegram.png" alt="telegram">
+                                <img src="../img/telegram.png" alt="telegram">
                             </a>
                             <a href="#">
-                                <img src="img/Instagram.png" alt="Instagram">
+                                <img src="../img/Instagram.png" alt="Instagram">
                             </a>
                             <a href="#">
-                                <img src="img/Youtube.png" alt="Youtube">
+                                <img src="../img/Youtube.png" alt="Youtube">
                             </a>
                             <a href="#">
-                                <img src="img/facebook.png" alt="facebook">
+                                <img src="../img/facebook.png" alt="facebook">
                             </a>
                         </div>
                     </div>
@@ -356,13 +338,13 @@
                             <a href="#">Про нас</a>
                         </li>
                         <li>
-                            <a href="#speed">Як отримати?</a>
+                            <a href="../index.html#speed">Як отримати?</a>
                         </li>
                         <li>
-                            <a href="offers/index.html">Офери</a>
+                            <a href="#">Офери</a>
                         </li>
                         <li>
-                            <a href="#question">Питання-відповідь</a>
+                            <a href="../index.html#question">Питання-відповідь</a>
                         </li>
                     </ul>
                     <p>Ліцензія видана Нацкомфінпослуг від 19.11.2015 р. №282, переоформлена 26.01.2017 р. в бездокументарній формі, строк дії – безстроково. Документи за посиланням.</p>
@@ -375,10 +357,10 @@
                    </div>
                     <div class="footerContainer">
                         <a href="#">
-                            <img src="img/googlePlay.png" alt="googlePlay">
+                            <img src="../img/googlePlay.png" alt="googlePlay">
                         </a>
                         <a href="#">
-                            <img src="img/appStore.png" alt="appStore">
+                            <img src="../img/appStore.png" alt="appStore">
                         </a>
                     </div>
                 </div>
@@ -387,10 +369,10 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script src="script/accardion.js"></script>
-    <script src="script/burger.js"></script>
-    <script src="script/burger-icon.js"></script>
-    <script src="script/range-slider.js"></script>
-    <script src="script/closeBurger.js"></script>
+    <script src="../script/accardion.js"></script>
+    <script src="../script/burger.js"></script>
+    <script src="../script/burger-icon.js"></script>
+    <script src="../script/range-slider.js"></script>
+    <script src="../script/closeBurger.js"></script>
 </body>
 </html>
