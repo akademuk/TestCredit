@@ -1748,6 +1748,10 @@ h2 {
 .imgFlex h2 {
     width: 80%;
 }
+.questionImg {
+    width: 100px;
+    height: 100px;
+}
 }
 @media (max-width: 350px) {
     .mobilePosition {
