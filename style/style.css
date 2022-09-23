@@ -969,7 +969,7 @@ h2 span {
     right: 5%;
     bottom: 25%;
 }
-.questionBottom .calcResultBtn {
+.questionbtn {
     margin-left: 200px;
     height: max-content;
 }
@@ -1009,6 +1009,7 @@ h2 span {
 }
 .footerLinkIcon a {
     margin-right: 37px;
+    text-decoration: none;
 }
 .footerLinkIcon a:nth-last-child(1) {
     margin-right: 0;
@@ -1206,7 +1207,7 @@ h1 {
 .questionBottom p {
     width: 50%;
 }
-.questionBottom .calcResultBtn {
+.questionbtn {
     margin-left: 20px;
     width: max-content;
 }
@@ -1422,7 +1423,7 @@ h2 {
 .questionBottomMessage {
     bottom: 20px;
 }
-.calcResultBtn {
+.questionbtn {
     position: absolute;
     left: 5%;
     bottom: 20px;
@@ -1480,7 +1481,7 @@ h2 {
     right: -10px;
     top: 38px;
 }
-.questionBottom .calcResultBtn {
+.questionbtn {
     bottom: -40px;
     left: 50%; 
     transform: translate(-50%, 0);
@@ -1559,7 +1560,7 @@ h1 {
     max-height: 150px;
     object-fit: cover;
     right: 0;
-    top: 20px;
+    top: 50px !important;
 }
 .positionImg img {
     max-height: 100%;
@@ -1645,6 +1646,10 @@ h1 {
 h2 {
     font-size: 40px;
 }
+.questionbtn {
+    width: max-content !important;
+    text-align: center;
+}
 }
 @media (max-width: 460px) {
     h1 {
@@ -1681,7 +1686,7 @@ h2 {
 .stepsContentInfo:nth-of-type(2) .number::before {
     width: 50px;
     right: -100% !important;
-    top: -100%;
+    top: -150%;
 }
 .stepsContentInfo:nth-of-type(3) .number::before {
     right: -150% !important;
@@ -1743,4 +1748,12 @@ h2 {
 .imgFlex h2 {
     width: 80%;
 }
+}
+@media (max-width: 350px) {
+    .mobilePosition {
+        top: -590%;
+    }
+    .footerTopCenter p:nth-of-type(1) {
+        padding-top: 50px;
+    }
 }
