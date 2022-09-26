@@ -22,13 +22,17 @@
 } */
 @font-face {
     font-family: "PresicavBold";
-    src: url("../fonts/Presicav-Bold.ttf") format("truetype");
+    src: url("../fonts/Presicav-Bold.woff2") format("woff2");
+    src: local('Presicav-Bold'),
+        url('../fonts/Presicav-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "PresicavRegular";
-    src: url("../fonts/Presicav-Regular.ttf") format("truetype");
+    src: url("../fonts/Presicav-Regular.woff2") format("woff2");
+    src: local('Presicav-Regular'),
+    url('../fonts/Presicav-Regular') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -473,6 +477,16 @@ body {
     padding-right: 135px;
     position: relative;
 }
+.rangeSlider::after{
+    content: "";
+    background: url(../img/elements.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -7%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
 .rangeSliderRight {
     background:#8267F6;
     backdrop-filter: blur(100px);
@@ -512,9 +526,6 @@ body {
 }
 .rangeSliderLeft {
     width: 50%;
-    background: url(../img/elements.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .rangeSliderRight {
     width: 50%;
@@ -1109,6 +1120,21 @@ h2 span {
     margin: 0 auto;
     margin-bottom: 32px;
     margin-top: 75px;
+}
+.main {
+    position: relative;
+}
+.main::after {
+    content: "";
+    background: url(../img/elements2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 395px;
+    height: 300px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: -1;
 }
 .cardContainerBlock {
     display: flex;
@@ -1835,6 +1861,15 @@ h2 {
 .questionbtn {
     width: max-content !important;
     text-align: center;
+}
+.main::after {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+}
 }
 }
 @media (max-width: 460px) {
