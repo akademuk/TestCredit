@@ -1128,7 +1128,7 @@ h2 span {
 }
 .card img{
     max-width: 100%;
-    min-height: 50px;
+    min-height: 75px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
@@ -1190,6 +1190,49 @@ h2 span {
     border-radius: 30px;
     border: none;
 }
+.infoContainer {
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    position: relative;
+}
+.infoContainerLeft,
+.infoContainerCenter,
+.infoContainerRight {
+    width: 45%;
+    max-width: 100%;
+}
+h5 {
+    font-family: 'PresicavBold';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #303030;
+    margin-bottom: 28px;
+}
+.infoContainer li {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300 !important;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.infoContainer b {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #303030;
+}
+.offerMessage {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
 @media (max-width: 1300px) {
 .headerContent {
     padding: 50px 50px;
@@ -1247,6 +1290,9 @@ h2 span {
   }
   .stepsContent {
     padding-left: 50px;
+}
+.infoContainer {
+    max-width: 90%;
 }
 .questionTop {
     padding: 0 50px;
@@ -1432,6 +1478,12 @@ h2 {
 .burgerBtn {
     width: max-content;
 }
+.infoContainer li {
+    font-size: 16px;
+}
+h5 {
+    font-size: 20px;
+}
 .burgerHelpText {
     width: 50%;
 }
@@ -1598,6 +1650,9 @@ h2 {
 @media (max-width: 576px) {
 .headerContent {
     padding: 20px;
+}
+.infoContainer {
+    display: none;
 }
 .cardContainerBlock {
     justify-content: center;
