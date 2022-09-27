@@ -23,6 +23,6 @@ function rangeMoney(){
     var days = valueDate.value;
     
     var newDate = new Date(Date.now()+days*24*60*60*1000)
-    sumDate.textContent = newDate.toLocaleDateString('de-DE')
+    sumDate.textContent = newDate.toLocaleDateString;
 }
 rangeMoney();
