@@ -1,17 +1,28 @@
-const mySlider = document.getElementById("my-slider");
-const sliderValue = document.getElementById("slider-money");
-function slider(){
-valPercent = (mySlider.value / mySlider.max)*100;
-mySlider.style.background = `linear-gradient(to right, #8BD16A ${valPercent}%, #C6BAFB ${valPercent}%)`;
-sliderValue.textContent = mySlider.value;
-}
-slider();
+const valueMoney = document.getElementById("valueMoney");
+const innerMoney = document.getElementById("innerMoney");
+const valueDate = document.getElementById("valueDate");
+const innerDate = document.getElementById("innerDate");
+let sum = document.getElementById("resultPercent");
+const valuePercent = 0.0001;
 
-const mySliderDate = document.getElementById("my-slider2");
-const sliderDateValue = document.getElementById("slider-date");
-function sliderDate(){
-valPercent = (mySliderDate.value / mySliderDate.max)*100;
-mySliderDate.style.background = `linear-gradient(to right, #8BD16A ${valPercent}%, #C6BAFB ${valPercent}%)`;
-sliderDateValue.textContent = mySliderDate.value;
+function rangeMoney(){
+    valPercent = (valueMoney.value / valueMoney.max)*100;
+    valueMoney.style.background = `linear-gradient(to right, #8BD16A ${valPercent}%, #C6BAFB ${valPercent}%)`;
+    innerMoney.textContent = valueMoney.value;
+
+    valPercent = (valueDate.value / valueDate.max)*100;
+    valueDate.style.background = `linear-gradient(to right, #8BD16A ${valPercent}%, #C6BAFB ${valPercent}%)`;
+    innerDate.textContent = valueDate.value;
+
+    letDate = (Number(valueDate.value) * Number(valuePercent));
+    valPer = (Number(valueMoney.value) * Number(letDate));
+    let summ = (Number(valueMoney.value) + Number(valPer))
+    sum.textContent = Math.ceil(summ);
+
+    let sumDate = document.getElementById("resultDate");
+    var days = valueDate.value;
+    
+    var newDate = new Date(Date.now()+days*24*60*60*1000)
+    sumDate.textContent = newDate.toLocaleDateString('de-DE')
 }
-sliderDate();
+rangeMoney();

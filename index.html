@@ -124,16 +124,16 @@
                <div class="sliderMoney">
                     <div class="sliderContainerText">
                         <p>Виберiть сумму до 18 000 грн</p>
-                        <div id="slider-money">0</div>
+                        <div id="innerMoney">0</div>
                     </div>
-                    <input type="range" id="my-slider" min="0" max="18000" value="0" step="100" oninput="slider()">
+                    <input type="range" id="valueMoney" min="0" max="18000" value="0" step="100" oninput="rangeMoney()">
                </div>
                <div class="sliderDate">
                 <div class="sliderContainerText">
                     <p>Виберить термiн</p>
-                    <div id="slider-date">0</div>
+                    <div id="innerDate">0</div>
                 </div>
-                    <input type="range" id="my-slider2" min="0" max="31" value="0" oninput="sliderDate()">
+                    <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
                 </div>
             </div>
             <form class="rangeForm">
@@ -144,11 +144,11 @@
             <div class="calcResult">
                 <div class="calcResultProcent">
                     <p>Вiдсотки</p>
-                    <p>10 грн.</p>
+                    <p id="resultPercent"></p>
                 </div>
                 <div class="calcResultProcent">
                     <p>Оплата у кiнцi термину</p>
-                    <p>15.09.2022</p>
+                    <p id="resultDate"></p>
                 </div>
                 <button class="calcResultBtn">отримати грошi</button>
             </div>

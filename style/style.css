@@ -497,8 +497,8 @@ body {
     padding: 15px 26px 31px 26px;
     max-width: 570px;
 }
-#slider-money,
-#slider-date {
+#innerMoney,
+#innerDate {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 800;
