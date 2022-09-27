@@ -17,7 +17,8 @@ function rangeMoney(){
     letDate = (Number(valueDate.value) * Number(valuePercent));
     valPer = (Number(valueMoney.value) * Number(letDate));
     let summ = (Number(valueMoney.value) + Number(valPer))
-    sum.textContent = Math.ceil(summ);
+    let res = (summ - Number(valueMoney.value))
+    sum.textContent = Math.ceil(res) + " грн.";
 
     let sumDate = document.getElementById("resultDate");
     var days = valueDate.value;
