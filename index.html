@@ -126,7 +126,7 @@
         <div class="positionImg">
             <img src="img/dog.png" alt="">
         </div>
-        <div class="rangeSliderRight">
+        <div class="rangeSliderRight" id="fields">
             <h3>Знижка 99,9% 🎉 <br> на 1-й кредит</h3>
             <div class="rangeSliderRightContainer">
                <div class="sliderMoney">
@@ -144,9 +144,9 @@
                     <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
                 </div>
             </div>
-            <form class="rangeForm">
-                <input type="text" placeholder="Iм’я / Призвище">
-                <input id="phone" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+38(999) 999-99-99">
+            <form class="rangeForm" id="ajax-contact-form">
+                <input type="name" placeholder="Iм’я / Призвище">
+                <input id="phone" type="phone" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+38(999) 999-99-99">
                 <input type="email" placeholder="Email" class="email">
             </form>
             <div class="calcResult">
@@ -158,7 +158,8 @@
                     <p>Оплата у кiнцi термину</p>
                     <p id="resultDate"></p>
                 </div>
-                <button class="calcResultBtn">отримати грошi</button>
+               
+               <button class="calcResultBtn">отримати грошi</button> 
             </div>
             <a href="#" class="linkCredit open-popup">Умови кредитування</a>
         </div>
@@ -384,6 +385,7 @@
             <p class="footerBottom">© 2022, TestCredit. All rights reserved</p>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="script/accardion.js"></script>
